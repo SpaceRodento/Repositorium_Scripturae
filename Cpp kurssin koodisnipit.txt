@@ -1,0 +1,24 @@
+/*
+#include <iostream>
+
+int main() {
+    std::cout << "AAAAAAAAAAAAAAAEEEEEEEEEEEEEEEAAAAAAAAAAAAA!\n";
+    std::cout << "AAAAAAAAAAAAAAAEEEEEEEEEEEEEEEAAAAAAAAAAAAA!\n";
+    
+} */
+
+#include <iostream>
+
+int main() {
+    int luku1 { 0 };
+    int luku2 { 0 };
+    int summa {0 };
+
+    std::cout << "Anna eka luku: ";     // väkäset osoittaa taaksepäin
+    std:cin >> luku1;       // Väkäset osoittaa eteenpäin
+    
+    std::cout << "Anna toka luku: ";
+    std::cin >> luku2;
+    
+    summa= luku1 + luku2;
+    std::cout << "Lukujen summa on  " << summa << "\n";
