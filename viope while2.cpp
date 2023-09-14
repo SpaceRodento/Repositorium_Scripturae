@@ -3,6 +3,7 @@
 #include <string>
     using namespace std;
 //======================
+// Tee ohjelma, joka tulostaa väliltä 1 – 50 kaikki parilliset luvut.
 
 int main() {
     int luku1 = 6; // alustetaan luvut
