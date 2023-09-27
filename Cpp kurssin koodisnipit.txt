@@ -12,7 +12,14 @@ rand()
 
 Modulo ei ikinä voi olla yhtä suuri tai suurempi kuin sen luku
 
+==============
 
+srand(time(0));
+alustaa satunnaislukugeneraattorin koneen kellonajalla
+
+int luku { rand() % 100 };	// 
+
+==============
 
 
 set precision
