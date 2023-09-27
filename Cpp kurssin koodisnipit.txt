@@ -1,5 +1,19 @@
-vero: 18000€
-vero on: 8€ kiinteä + ylittävästä osasta: tulo-alaraja (18000-16900)*6,25%
+Modulo - jakojäännös
+
+luku %2 = 0
+0 = parillinen
+1 = pariton
+
+rand()
+0..32767
+	rand() %100
+	-> 0..99 +1
+	lukuja väliltä 1..100
+
+Modulo ei ikinä voi olla yhtä suuri tai suurempi kuin sen luku
+
+
+
 
 set precision
 
