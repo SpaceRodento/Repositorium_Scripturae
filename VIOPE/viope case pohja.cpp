@@ -26,21 +26,21 @@ int main() {
 
 switch (Merkki)
 {
-case '+':
-  luku4 = luku1 + luku2;
-  break;
-case '-':
-  luku4 = luku1 - luku2;
-  break;
-case '*':
-  luku4 = luku1 * luku2;
-  break;
-case '/':
-  luku4 = luku1 / luku2;
-  break;
+  case '+':
+    luku4 = luku1 + luku2;
+    break;
+  case '-':
+    luku4 = luku1 - luku2;
+    break;
+  case '*':
+    luku4 = luku1 * luku2;
+    break;
+  case '/':
+    luku4 = luku1 / luku2;
+    break;
 
-default:
-  break;
+  default:
+    break;
 }
 
 /*

@@ -1,3 +1,9 @@
+vero: 18000€
+vero on: 8€ kiinteä + ylittävästä osasta: tulo-alaraja (18000-16900)*6,25%
+
+set precision
+
+
 std::string nimi;
 std::cout << "Anna nimesi: ";
 std::getline(std::cin, nimi);
