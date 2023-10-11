@@ -11,8 +11,8 @@ int main() {
     int i     = 1;
     float pisteet     = 0;
     float vastaus    = 0;
- //   float luvut[100] = {};
-    float pistetaulu[5] = {17.5,18,18.5,17.5,16};
+    float tuomaripiste = 0;
+    float pistetaulu[5];
     float pieninluku = 0;
     float isoinluku = 0;
     // Puuhaus
@@ -21,9 +21,14 @@ int main() {
     cin >> hyppy;
     
     while (i <= 5){
-        cout << "Tuomarin " << i << " pisteet: " << pistetaulu[i-1];
-        //cin >> tuomaripiste;
-        cout  << endl;
+/*        cin >> tuomaripiste;
+        pistetaulu[i-1] = tuomaripiste;
+        cout << "Tuomarin " << i << " pisteet: " << pistetaulu[i-1];*/
+         cout  << endl;
+        pistetaulu[i-1] = tuomaripiste;
+        cout << "Tuomarin " << i << " pisteet: ";
+        cin >> pistetaulu[i-1];
+
             pisteet = pisteet + pistetaulu[i-1];
             if (pistetaulu[i-1] <= pieninluku || pieninluku == 0) {
                 pieninluku = pistetaulu[i-1];
