@@ -16,45 +16,47 @@ k(n) = n * k(n-1).
 Example output:
 Anna kokonaisluku välille 0 - 16
 11
-Luvun 11 kertoma on 39916800*/
+Luvun 11 kertoma on 39916800
+*/
 
-  float alioo(int luku1){
-    int luku2;
-    int k;
-    k = luku1;
-    int n;
+  long long alioo(long luku1){
+//    int luku2;
+    long long k = 1;
+    long n = 1;
 
-    if (luku1 < 0){
+    if (luku1 <= 1){
+      cout << "virhe, nolla";
      return 1;
     }
-    else
-    {
-     luku2 = n * k(n-1) ;
+      else
+      {
+/*        for (n; n > 0; n--)
+        {
+          k = n * k;*/
+
+//        cout << "kerrotaan " << k << endl;
+        for (n; n <= luku1; n++)
+        {
+          k = n * k;
+//          cout << "n =  " << n << "| k =  " << k << endl;
+        }
+        
+        }
+      return (k);
     }
     
-    return (luku2);
-    }
 
-/*
-Anna viikon tyotunnit: 55
-Viikon palkkasi on: 625 euroa.*/
-
+// ========== Pääohjelma
 int main() {
 //alustus
-  float luku1;
-  float luku2;
-  float luku3;
+  long luku1 = 0;
+  long long tuloste = 0;
 
-  cout << "Anna viikon tyotunnit: ";
+  cout << "Anna kokonaisluku välille 0 - 16" << endl;
   cin >> luku1;
-/*  cout << "Anna auton polttoaineen kulutus sadalla kilometrilla: ";
-  cin >> luku2;
-  cout << "Anna polttoaineen hinta: ";
-  cin >> luku3;
-*/
-  cout << "Viikon palkkasi on: ";
-  float tuloste = alioo(luku1);  // Kutsutaan aliooo
-  cout << tuloste << " euroa."<< endl;
+
+  tuloste = alioo(luku1);  // Kutsutaan aliooo
+  cout << "Luvun " << luku1 << " kertoma on " << tuloste;
 
 return 0;
 
