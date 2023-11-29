@@ -6,7 +6,7 @@
 //======================
 
 //aliohjelma 
-  void neliolaskin(float luku1){
+  void ikasi(float luku1){
    float tuloste = luku1*luku1;
     cout << "Luvun nelio on: "<< tuloste << endl; 
   }
@@ -22,7 +22,7 @@ Luvun nelio on: 81*/
 
   cout << "Anna luku, jonka nelio lasketaan: ";
   cin >> luku1;
-  neliolaskin(luku1);
+  ikasi(luku1);
 return 0;
 
 }

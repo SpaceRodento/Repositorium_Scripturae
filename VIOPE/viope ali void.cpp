@@ -18,38 +18,26 @@ Mikä merkki tulostetaan?    *
 *************************
 */
 
-  string alioo(long luku1){
-    long i = 0;
-    long k = 1;
-    long l = 1;
-    long n = 1;
-    long m = 0;
-    string ajankohta;
+  void alioo(){
+    char merkki = '@';
+    int luku = 0;
 
-       if (luku1 < 0 || luku1 >= 24)
-       {
-        ajankohta = "Ei ole kellonaika.";
-        return ajankohta;
-       }
-        else if (luku1 >=6 && luku1 <= 11)
-        {
-          ajankohta = "aamu";
-        }
-        else if (luku1 >=12 && luku1 <= 16)
-        {
-          ajankohta = "päivä";
-        }
-        else if (luku1 >=17 && luku1 <= 22)
-        {
-          ajankohta = "ilta";
-        }
-        else if (luku1 == 23 || luku1 <= 05)
-        {
-          ajankohta = "yö";
-        }
-        
-      return ajankohta;
-      }
+    cout << "Montako merkkiä haluat?    ";
+    cin >> luku;
+    cout << "Mikä merkki tulostetaan?    ";
+    cin >> merkki;
+    cout << endl;
+
+    for (int i = 0; i < luku; i++)
+    {
+      cout << merkki;
+    }
+    
+
+  }
+
+
+
 
 // Aliohjelma loppu
 //======================
@@ -57,17 +45,10 @@ Mikä merkki tulostetaan?    *
 
 // ========== PÄÄOHJELMA ====================
 int main() {
-  long luku1 = 0;
-  string tuloste;
-//  string tuloste = 0;
-
-  cout << "Anna kellonaika tunneissa (0-23): " ;
-  cin >> luku1;
-//  cout << endl;
-
-  tuloste = alioo(luku1);  // Kutsutaan aliooo
-  cout << "Hetki päivästä on "<< tuloste;      // tulostetaan tulos
+  
+  alioo();  // Kutsutaan aliohjelma
 
 return 0;
 
 }
+

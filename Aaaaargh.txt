@@ -1,4 +1,60 @@
+//omaan aliohjelmaan menee tulostus kunhan saa väännettyä
+/*  // Kysy tiedot opiskelijoilta
+  for (i = 0; i < oppilasmaara; i++) {
+    // Kutsutaan aliohjelmaa, joka kyselee tiedot
+    luoOpiskelija(arrOPISKELIJA[i]);
+    // pieni väliaikatieto
+    cout << "luodut tiedot etunimi+id: " << arrOPISKELIJA[i].etunimi << arrOPISKELIJA[i].id << endl;
+  }
 
+  return 0;
+}
+
+
+  // Kysy tiedot opiskelijoilta
+  for (i = 0; i < oppilasmaara; i++) {
+    // Kutsutaan aliohjelmaa, joka kyselee tiedot
+    kysyOpiskelijatiedot(arrOPISKELIJA[i]);
+  }
+  return 0;
+}
+
+// Aliohjelma, joka kyselee tiedot
+void kysyOpiskelijatiedot(IHMINEN& opiskelija) {
+  // Kysy tiedot opiskelijalta
+  cout << "Opiskelijan ID: ";
+  cin >> opiskelija.id;
+  cout << endl;
+
+//tähän kohti for
+//ensin kokeilua
+  i = 1;
+  cout << "Anna opiskelijan " << i << " nimi: ";
+  cin >> arrOPISKELIJA[1].etunimi;
+ 
+  i++;
+  cout << "Anna opiskelijan " << i << " nimi: ";
+  cin >> arrOPISKELIJA[2].etunimi;
+  
+  cout << "opiskelijan " << i-1 << "nimi: "<< arrOPISKELIJA[i].etunimi << endl;
+  cout << "opiskelijan " << i << "nimi: "<< arrOPISKELIJA[i].etunimi << endl;
+*/
+
+// Kutsutaan opiskelijan luonti
+// Pitää tehdä for joka käyttää oppilasmäärää parametrina
+// luoOpiskelija(oppilasmaara, OPISKELIJA[]);
+
+
+// tulostetaan halutut tiedot
+// tulostaOpiskelijanTiedot(OPISKELIJA);
+
+
+
+
+{{1,2,1}}*{{0,3.1,0.4,0.45,0.51},{0.12,0.33,0.51,0.58,0.66},{0.19,0.38,0.60,0.69,0.78}}*{{1},{2},{2},{2},{1}}  
+
+
+{{15,23,32,12},{22,21,23,9},{13,14,20,14},{5,31,17,8},{20,24,10,21}}*{47,55,34,75}
 
 
 mklink /j "c:\Users\Meki\OneDrive - TUNI.fi\Codices" "c:\Git\Codices"
