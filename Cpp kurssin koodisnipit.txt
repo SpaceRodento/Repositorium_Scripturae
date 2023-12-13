@@ -19,6 +19,17 @@ Taulukon sijaan hyvä olisi tätä alkaa käyttämään. koko muuttuu dynaamises
     std::cout << "Vektorissa on " << tulokset.size() << " alkiota \n";
     // size() palauttaa vektoriin pituuden
 
+RANGE-BASED FOR LOOP
+==============
+  vector<int> vecArabialaisLuvut;
+          vecArabialaisLuvut.push_back(Arabialainen); //pusketaan vektorin perälle löydetty numero
+// tulostaa koko vektorin luvut
+      for (int luku : vecArabialaisLuvut){
+      cout << luku << " ";}
+
+luvut.at(n)
+// at osoittaa kohdan vektorilta
+
 
 Buffer overflow
 ===============
